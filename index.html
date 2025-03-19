@@ -1,0 +1,122 @@
+<html>
+    <html lang="en"></html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World Countries Data</title>
+    <link rel="stylesheet" href="design.css">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#4CAF50">
+</head>
+<body>
+
+<table>
+<h1><strong>World Countries Data</strong></h1>
+<tr>
+<th>Country</th>
+<th>Capital</th>
+<th>Population</th>
+<th>Official Languages</th>
+<th>Flag</th>
+</tr>
+
+<tr>
+<td rowspan = "2"><a href="https://en.wikipedia.org/wiki/Philippines"><button>Philippines</button></a></td>
+<td rowspan = "2">Manila</td>
+<td rowspan = "2">113.9 million</td>
+<td>Filipino</td>
+<td rowspan = "2"><img src = "Flags\philippineflag.png" width="160" height="80"></td>
+</tr>
+<tr><td>English<td></tr>
+
+<tr>
+<td><a href="https://en.wikipedia.org/wiki/Germany"><button>Germany</button></a></td>
+<td>Berlin</td>
+<td>83.2 million</td>
+<td>German</td>
+<td><img src = "Flags\germanyflag.png" width="160" height="80"></td>
+</tr>
+
+<tr>
+<td><a href="https://en.wikipedia.org/wiki/Australia"><button>Australia</button></a></td>
+<td>Canberra</td>
+<td>25.69 million</td>
+<td>English</td>
+<td><img src = "Flags\australiaflag.png" width="160" height="80"></td>
+</tr>
+
+<tr>
+<td rowspan = "3"><a href="https://en.wikipedia.org/wiki/Belgium"><button>Belgium</button></a></td>
+<td rowspan = "3">Brussels</td>
+<td rowspan = "3">11.59 million</td>
+<td>French</td>
+<td rowspan = "3"><img src = "Flags\belgiumflag.png" width="160" height="80"></td>
+</tr>
+<tr><td>German<td></tr>
+<tr><td>Dutch<td></tr>
+
+<tr>
+<td><a href="https://en.wikipedia.org/wiki/Russia"><button>Russia</button></a></td>
+<td>Moscow</td>
+<td>143.4 million</td>
+<td>Russian</td>
+<td><img src = "Flags\russiaflag.png" width="160" height="80"></td>
+</tr>
+
+<tr>
+<td rowspan = "2"><a href="https://en.wikipedia.org/wiki/Greece"><button>Greece</button></a></td>
+<td rowspan = "2">Athens</td>
+<td rowspan = "2">10.64 million</td>
+<td>Greek</td>
+<td rowspan = "2"><img src = "Flags\greeceflag.png" width="160" height="80"></td>
+</tr>
+<tr><td>Modern Greek<td></tr>
+
+<tr>
+<td><a href="https://en.wikipedia.org/wiki/France"><button>France</button></a></td>
+<td>Paris</td>
+<td>67.75 million</td>
+<td>French</td>
+<td><img src = "Flags\franceflag.png" width="160" height="80"></td>
+</tr>
+
+<tr>
+<td><a href="https://en.wikipedia.org/wiki/Japan"><button>Japan</button></a></td>
+<td>Tokyo</td>
+<td>125.7 million</td>
+<td>Japanese</td>
+<td><img src = "Flags\japanflag.png" width="160" height="80"></td>
+</tr>
+
+<tr>
+<td><a href="https://en.wikipedia.org/wiki/United_States"><button>United States</button></a></td>
+<td>Washington, D.C.</td>
+<td>331.9 million</td>
+<td>English</td>
+<td><img src = "Flags\usflag.png" width="160" height="80"></td>
+</tr>
+
+<tr>
+<td><a href="https://en.wikipedia.org/wiki/United_Kingdom"><button>United Kingdom</button></a></td>
+<td>London</td>
+<td>67.33 million</td>
+<td>English</td>
+<td><img src = "Flags\ukflag.png" width="160" height="80"></td>
+</tr>
+</table>
+</body>
+<script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('/service-worker.js')
+          .then((registration) => {
+            console.log('Service Worker registered with scope: ', registration.scope);
+          })
+          .catch((error) => {
+            console.log('Service Worker registration failed: ', error);
+          });
+      });
+    }
+  </script>
+  
+</html>
