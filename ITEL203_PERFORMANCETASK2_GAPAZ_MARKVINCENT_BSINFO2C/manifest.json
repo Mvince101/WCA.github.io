@@ -1,0 +1,17 @@
+{
+    "name": "World Countries Data",
+    "short_name": "Countries Data",
+    "description": "A list of countries with data including population, capital, official languages, and flags.",
+    "start_url": "/world_countries_data.html",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#4CAF50",
+    "icons": [
+      {
+        "src": "/icons/icon1.png",
+        "sizes": "192x192",
+        "type": "image/png"
+      }
+    ]
+  }
+  
